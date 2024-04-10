@@ -20,7 +20,6 @@ function fetchJSONData() {
                console.error("Unable to fetch data:", error));
 }
 fetchJSONData();
-console.log(values);
 
 function showSubReds(data) {
     for (let i = 0; i < data.data.children.length; i++) {
