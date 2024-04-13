@@ -20,7 +20,7 @@ setInterval(function() {
 
 }, 1000)
 
-
+print("noApi")
 
 // bruh i dont even need the api lmao
 function loadJSON(path, success, error) {
