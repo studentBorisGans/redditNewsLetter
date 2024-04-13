@@ -4,7 +4,7 @@ import './style.css'
 let values;
 
 function fetchJSONData() {
-    fetch("redditData.json")
+    fetch("redditContent.json")
         .then((res) => {
             if (!res.ok) {
                 throw new Error
@@ -22,6 +22,7 @@ function fetchJSONData() {
 fetchJSONData();
 
 function showSubReds(data) {
+    console.log(data.data.children[0])
     for (let i = 0; i < data.data.children.length; i++) {
         console.log(data.data.children[i].data.display_name);
     }

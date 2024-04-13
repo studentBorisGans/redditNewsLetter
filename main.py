@@ -2,7 +2,7 @@ import json
 
 from generateAPI import generateAPI
 
-response = generateAPI("subReddits")
+response = generateAPI("content")
 values = response.json()
 
 print("\n")
