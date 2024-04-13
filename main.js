@@ -20,6 +20,9 @@ setInterval(function() {
 
 }, 1000)
 
+const spawn = require("child_process").spawn;
+const pythonProcess = spawn("python", ["/Users/borisgans/vsProjects/personalProjects/newsLetter"]);
+
 
 
 
