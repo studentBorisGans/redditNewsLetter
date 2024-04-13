@@ -22,7 +22,10 @@ setInterval(function() {
 
 
 
+
+
 // bruh i dont even need the api lmao
+// nevermind I only need it for searching, but not for accessing posts
 function loadJSON(path, success, error) {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
@@ -37,7 +40,9 @@ function loadJSON(path, success, error) {
     };
     xhr.open('GET', path, true);
     xhr.send();
-  }
+}
+
+
 
 function fetchJSONData() {
     fetch("redditContent.json")
